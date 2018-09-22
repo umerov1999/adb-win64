@@ -14,7 +14,7 @@ VPATH+= ../../../../
 SRCS+= AdbWinUsb.c
 SRCS+= usb_none.c
 
-SRCS+= ../../../../openssl-1.0.2j/ms/applink.c
+SRCS+= ../../../../openssl-1.0.2p/ms/applink.c
 
 #SRCS+= usb_windows.c
 SRCS+= adb.c
@@ -117,14 +117,14 @@ CPPFLAGS+= -DADB_REVISION='"$(adb_version)"'
 CPPFLAGS+= -I.
 CPPFLAGS+= -I../include
 CPPFLAGS+= -I../../../external/zlib
-CPPFLAGS+= -I../../../../openssl-1.0.2j/include
+CPPFLAGS+= -I../../../../openssl-1.0.2p/include
 CPPFLAGS+= -I../base/include 
 CPPFLAGS+= -I../../../platform/development/host/windows/usb/api/
 CPPFLAGS+= -D__BEGIN_DECLS=/**/
 CPPFLAGS+= -D__END_DECLS=/**/
 CFLAGS+= -O2 -g -Wall -Wno-unused-parameter
 
-LDFLAGS+= -L../../../../openssl-1.0.2j -static-libstdc++ -static-libgcc
+LDFLAGS+= -L../../../../openssl-1.0.2p -static-libstdc++ -static-libgcc
 LDFLAGS+= -municode
 LIBS= -lcrypto -lpthread -lws2_32 -lgdi32
 LIBS+= -static -lstdc++
