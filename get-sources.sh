@@ -2,8 +2,8 @@
 
 #         DEPENDENCIES
 # -------------------------
-wget https://www.openssl.org/source/openssl-1.0.2j.tar.gz
-tar -xvzf openssl-1.0.2j.tar.gz
+wget https://www.openssl.org/source/openssl-1.0.2p.tar.gz
+tar -xvzf openssl-1.0.2p.tar.gz
 
 #         CONFIG
 # -------------------------
